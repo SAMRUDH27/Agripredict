@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherForecast Component matches snapshot when logged in 1`] = `
+<div>
+  <div
+    class="bg-white shadow-md rounded-lg p-6"
+  >
+    <h3
+      class="text-xl font-bold text-green-600 mb-4"
+    >
+      Weather Forecast
+    </h3>
+    <div
+      class="flex justify-between"
+    >
+      <div
+        class="text-center"
+      >
+        <p
+          class="font-medium"
+        >
+          Mon
+        </p>
+        <div
+          data-testid="sun-icon"
+        >
+          Sun Icon
+        </div>
+        <p
+          class="font-bold"
+        >
+          28°C
+        </p>
+      </div>
+      <div
+        class="text-center"
+      >
+        <p
+          class="font-medium"
+        >
+          Tue
+        </p>
+        <div
+          data-testid="cloud-icon"
+        >
+          Cloud Icon
+        </div>
+        <p
+          class="font-bold"
+        >
+          25°C
+        </p>
+      </div>
+      <div
+        class="text-center"
+      >
+        <p
+          class="font-medium"
+        >
+          Wed
+        </p>
+        <div
+          data-testid="sun-icon"
+        >
+          Sun Icon
+        </div>
+        <p
+          class="font-bold"
+        >
+          24°C
+        </p>
+      </div>
+      <div
+        class="text-center"
+      >
+        <p
+          class="font-medium"
+        >
+          Thu
+        </p>
+        <div
+          data-testid="sun-icon"
+        >
+          Sun Icon
+        </div>
+        <p
+          class="font-bold"
+        >
+          27°C
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WeatherForecast Component matches snapshot when logged out 1`] = `
+<div>
+  <div
+    class="bg-white shadow-md rounded-lg p-6"
+  >
+    <h3
+      class="text-xl font-bold text-green-600 mb-4"
+    >
+      Weather Forecast
+    </h3>
+    <p
+      class="text-gray-500 text-center"
+    >
+      Login to view weather forecast
+    </p>
+  </div>
+</div>
+`;

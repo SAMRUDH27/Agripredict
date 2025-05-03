@@ -1,0 +1,120 @@
+/* AppBar.css */
+
+/* Basic Styling */
+.appbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00796b; /* Green background */
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .appbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .appbar .menu-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .appbar .menu-icons i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .appbar .menu-icons i:hover {
+    color: #004d40;
+  }
+  
+  /* Hide the menu items initially on small screens */
+  .menu {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Navigation Links */
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .nav-link:hover {
+    background-color: #004d40;
+  }
+  
+  /* Hamburger Icon - Displayed on small screens */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Styles (Up to 768px screen width) */
+  @media (max-width: 768px) {
+    .appbar {
+      justify-content: space-between;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #00796b;
+      width: 100%;
+      padding: 10px;
+      gap: 10px;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .menu-icons {
+      display: none;
+    }
+  
+    .nav-link {
+      text-align: center;
+      padding: 12px;
+      font-size: 18px;
+    }
+  
+    .appbar .logo {
+      font-size: 20px;
+    }
+  }
+  
+  /* Large Screen Styles (Above 768px) */
+  @media (min-width: 768px) {
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  
+    .appbar .logo {
+      font-size: 28px;
+    }
+  }
+  

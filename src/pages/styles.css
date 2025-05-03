@@ -1,0 +1,130 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Fullscreen Container */
+  .min-h-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #ffffff;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Section */
+  .form-header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-header h1 {
+    font-size: 2rem;
+    color: #333333;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .form-header p {
+    color: #777777;
+    font-size: 1rem;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555555;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.4);
+  }
+  
+  /* Button */
+  .submit-button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    box-shadow: 0 4px 12px rgba(37, 117, 252, 0.4);
+  }
+  
+  /* Footer Section */
+  .form-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .form-footer p {
+    font-size: 0.9rem;
+    color: #777777;
+  }
+  
+  .form-footer a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 1.5rem;
+    }
+  
+    .form-header h1 {
+      font-size: 1.8rem;
+    }
+  }
+  

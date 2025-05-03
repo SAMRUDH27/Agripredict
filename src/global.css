@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-cool-gray-50 text-gray-800 font-sans antialiased;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cool-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-green-500 rounded-full;
+}
+
+/* Button styles */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 border border-transparent 
+         rounded-lg text-sm font-medium transition-colors duration-300 
+         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-green-500;
+}
+
+.btn-primary {
+  @apply bg-primary-green-600 text-white hover:bg-primary-green-700 
+         active:bg-primary-green-800;
+}
+
+.btn-secondary {
+  @apply bg-cool-gray-100 text-gray-700 hover:bg-cool-gray-200 
+         active:bg-cool-gray-300;
+}
+
+/* Input styles */
+.input {
+  @apply block w-full px-3 py-2 border border-cool-gray-300 rounded-lg 
+         shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-green-500 
+         focus:border-primary-green-500;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white shadow-md rounded-xl overflow-hidden;
+}
+
+/* Animated hover effects */
+.hover-lift {
+  @apply transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+/* Slide in animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out;
+}
